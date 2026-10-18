@@ -11,13 +11,13 @@ class HomeActivity extends StatelessWidget {
         centerTitle: true, 
         elevation: 1
       ),
-      body: Container(
-        color: Colors.red,
-        padding: EdgeInsets.all(16),
-        margin: EdgeInsets.all(23),
-        child: Container(        
-          color: Colors.black,        
-        ),
+      body: Column(
+        children: [
+         Text("Name"),
+         SizedBox(height: 20),
+         Text("Nahid"),
+          
+        ],
       ),
     );
   }
