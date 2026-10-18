@@ -13,10 +13,30 @@ class HomeActivity extends StatelessWidget {
       ),
       body: Column(
         children: [
-         Text("Name"),
-         SizedBox(height: 20),
-         Text("Nahid"),
-          
+          Container(
+            color: Colors.amber,
+            margin: EdgeInsets.all(12),
+            child: Container(              
+              child: Text(
+                "Welcome to the ostad app",
+                style: TextStyle(fontSize: 24,color: Colors.black),
+              ),
+            ),
+          ),
+          Container(color: Colors.blue, height: 100,),  
+           SizedBox(height: 20,),      
+          Container(
+            color: Colors.brown, height: 200,
+            child: Row(
+              children: [
+                Text("Nahid"),
+                SizedBox(width: 20,),// if 
+                Text("Khan"),
+              ],
+            ),
+          ),
+           SizedBox(height: 20,),        
+          Container(color: Colors.lightGreenAccent, height: 100,),
         ],
       ),
     );
